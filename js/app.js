@@ -122,11 +122,18 @@ SDAPP.prototype.plugin = function(){
 		_this.J(".col_menu_con").slideToggle(150);
 	});
 
-	if(this.J(".wp_column").length<1){
+	// if(this.J(".wp_column").length<1){
+	// 	this.J(".column-switch").hide();
+	// 	this.J(".col_menu_head").unbind("click");
+	// }
+	this.J(".column-head").on("click",function(event){
+		event.preventDefault();
+		_this.J(".column-body").slideToggle(150);
+	});
+	if(this.J(".column-item").length<1){
 		this.J(".column-switch").hide();
-		this.J(".col_menu_head").unbind("click");
+		this.J(".column-head").unbind("click");
 	}
-
 	// small screen
 	if(this.client().width<768){
 		// jumphandle

@@ -610,7 +610,7 @@ ol, ul {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    background: url(../images/iconbg.png) 3px center no-repeat;
+    /*background: url(./images/iconbg.png) 3px center no-repeat;*/
    /* padding-left: 15px;*/
     float: left;
     width: 83%;
@@ -690,6 +690,10 @@ span.date-year {
 /*底部*/
 .wp-container3 {
     background: #7f033f;
+}
+.wp-wrapper {
+    width: 100%;
+    /*background-color: #fff;*/
 }
 .wp-wrapper .wp-inner {
     width: auto;
@@ -775,13 +779,17 @@ span.date-year {
     float: left;
     margin-right: -280px;
 }
+.column-list-wrap li.selected a.selected {
+    color: #373737;
+    background: url(./images/lmlb_bj.png) repeat-y;
+}
 /*右边列表*/
 .wp-column-news {
     float: right;
     width: 100%;
 }
 .column-head {
-    background: #5e0842;
+    background: #8F0744;
     line-height: 24px;
 }
 .column-head .column-anchor {
@@ -800,7 +808,7 @@ span.date-year {
     height: 24px;
     float: right;
     display: none;
-    background: url(img/menu-dot.png) no-repeat center;
+    background: url(./images/menu-dot.png) no-repeat center;
 }
 .column-list-wrap li {
     width: 100%;
@@ -821,6 +829,114 @@ span.date-year {
     line-height: 47px;
     margin-right: 25px;
     border-bottom: 1px solid #d3d8db;
-    background: url(../images/jt_right.png) right center no-repeat;
+    background: url(./images/jt_right.png) right center no-repeat;
     padding-left: 8px;
+}
+/*list列表*/
+.wp-column-news .column-news-box {
+    margin-left: 300px;
+    margin-right: 15px;
+}
+.list-head {
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+.list-meta .column-title {
+    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 24px;
+    font-size: 18px;
+    color: #333;
+}
+/*面包屑*/
+.list-meta .column-path {
+    float: right;
+    line-height: 24px;
+    color: #454545;
+}
+.list-meta .column-path a {
+    color: #454545;
+}
+.possplit {
+    background-image: url(./images/posSplit.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 22px;
+    background-position: center;
+    width: 10px;
+    display: inline-block;
+    border: 0px solid red;
+}
+.column-news-con {
+    padding: 10px 0;
+    min-height: 350px;
+}
+.column-news-list .column-news-item {
+    display: block;
+    position: relative;
+    border-bottom: 1px dashed #b1b1b1;
+    line-height: 40px;
+    padding: 0;
+    padding-left: 10px;
+    background: url(./images/dot.png) no-repeat 2px 19px;
+}
+.column-news-list .column-news-item .column-news-title {
+    display: block;
+    margin-right: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.column-news-list .column-news-item .column-news-date {
+    display: block;
+    text-align: right;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    color: #999;
+}
+/*分页*/
+.wp_paging li {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    margin-top: 5px;
+}
+.wp_paging li span, .wp_paging li a {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+.wp_paging li em {
+    font-style: normal;
+}
+.wp_paging li span, .wp_paging li a {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+.wp_paging li a {
+    cursor: pointer;
+    color: #666;
+    line-height: 25px;
+    height: 25px;
+}
+.wp_paging li a span {
+    margin: 0;
+}
+.wp_paging li input {
+    font-size: 12px;
+    width: 24px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    margin-top: 4px;
+    text-align: center;
 }
