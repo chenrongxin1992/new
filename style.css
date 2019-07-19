@@ -77,6 +77,9 @@ a:hover { color:#095ab5; }
 .site-lang ul li.links a:hover{color:#fff;}
 /*默认主导航样式*/
 #nav{background: #8F0744;}
+#mynav {
+    background: #8F0744;
+}
 #nav .inner{}
 #nav .inner .wp-panel{}/*导航*/
 #nav .inner .wp-panel .wp-window{}
@@ -939,4 +942,10 @@ span.date-year {
     background: #fff;
     margin-top: 4px;
     text-align: center;
+}
+/*文章页*/
+.list-meta .my-column-path {
+    /* float: right; */
+    line-height: 24px;
+    color: #454545;
 }
